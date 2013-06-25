@@ -80,7 +80,8 @@ Vagrant.configure("2") do |config|
     }
 
     chef.run_list = [
-        "recipe[jenkins-on-vagrant::default]"
+        "recipe[jenkins-on-vagrant::default]",
+        "recipe[jenkins::server]"
     ]
   end
 end
